@@ -1,17 +1,6 @@
 # Ubuntu on Trifork Dell Machines
 How to install Ubuntu Linux on a Trifork Dell Computer.
 
-You should probably clone this repo in order to easier run scripts etc.:
-```
-sudo apt install --yes git
-git clone git@github.com:hcnp/trifork-dell-ubuntu.git
-cd trifork-dell-ubuntu
-```
-
-> ⚠️ **DISCLAIMER**:
-> 
-> I will only document the cli (command-line interface) way of installing and configuring, as this is easier to document and repeat, and leave it up to the reader to use the GUI (Graphical User Interface) to do the same.
-
 # Download Dell Recovery Image for USB Drive
 - Download the image for your system (ISO): [Dell OS Recovery image](https://www.dell.com/support/home/en-us/drivers/osiso/recoverytool)
 - And create a bootable USB media as described on [How to Download and Use the Dell Operating System Recovery Image in Ubuntu or Linux](https://www.dell.com/support/kbdoc/en-us/000132294/how-to-use-the-dell-hosted-recovery-image-of-linux) under "Creating a USB recovery media"
@@ -54,6 +43,18 @@ Some development tools are only available with this manager. Examples are k9s an
 # Trifork setup checklist
 [4: Den første dag - tjekliste til opsætning for nye medarbejdere](https://docs.trifork.com/pages/viewpage.action?pageId=92572195)
 
+You should probably clone this repo in order to easier run scripts etc.:
+```
+sudo apt install --yes git
+git clone git@github.com:hcnp/trifork-dell-ubuntu.git
+cd trifork-dell-ubuntu
+```
+
+> ⚠️ **DISCLAIMER**:
+> 
+> I will only document the cli (command-line interface) way of installing and configuring, as this is easier to document and repeat, and leave it up to the reader to use the GUI (Graphical User Interface) to do the same.
+> I prefer Apt and Snap over Flatpak and Homebrew as they are baked into Ubuntu. Maybe you can change my opinion if you don't agree.
+
 ## E-mail
 - The best e-mail client with Exchange e-mail and calendar support for Gnome in Ubuntu is [Evolution](https://wiki.gnome.org/Apps/Evolution)
 - Install with Flatpak: `flatpak install --assumeyes org.gnome.Evolution`
@@ -67,3 +68,33 @@ Some development tools are only available with this manager. Examples are k9s an
   - Do not sync older than 1 years (use https://webmail.trifork.com for older)
   - Default for everything else
 - Configuring "Microsoft Exchange" under "Online Accounts" in Gnome/System settings creates the settings in Evolution, but does not work for me. What works is configuring it directly in Evolution
+
+## Chat
+### Rocket Chat
+- Install: `snap install rocketchat-desktop`
+- [How to use Trifork Chat](https://docs.trifork.com/display/TITSERV/How+to+use+Trifork+Chat)
+
+### Slack
+`snap install slack`
+
+## Antivirus
+[How to install ESET Endpoint Security](https://docs.trifork.com/display/TITSERV/How+to+install+ESET+Endpoint+Security)
+`./apps/eset.sh`
+
+## Video meetings
+### Zoom
+`flatpak install --assumeyes us.zoom.Zoom`
+
+### Teams
+Install in Google Chrome by clicking the icon in the address bar when logged in via https://teams.microsoft.com/
+
+## VPN
+- Cisco Anyconnect: Follow the guide on [VPN Access](https://wall.trifork.com/display/TRILOGIN/VPN+Access)
+- `sudo bash ~/Downloads/cisco-secure-client-linux64-*.sh`
+
+## Visual Studio Code
+`snap install code`
+
+## GitG
+GUI for Git from Gnome which is perfect for Ubuntu as it runs Gnome.
+`sudo apt install gitg`
