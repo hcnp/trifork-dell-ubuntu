@@ -58,7 +58,7 @@ cd trifork-dell-ubuntu
 ## E-mail
 - The best e-mail client with Exchange e-mail and calendar support for Gnome in Ubuntu is [Evolution](https://wiki.gnome.org/Apps/Evolution)
 - Install with Flatpak: `flatpak install --assumeyes org.gnome.Evolution`
-- When configuring Evolution in "Receiving Email" choose "Exchange Web Services" as "Server Type" <username>@trifork.com in "Username" and use the "Fetch URL" button
+- When configuring Evolution in "Receiving Email" choose "Exchange Web Services" as "Server Type" &lt;username&gt;@trifork.com in "Username" and use the "Fetch URL" button
 - Only NTLM works for me. Kerberos would be perferrable though
 - My recommendation for further options:
   - Check every 5 minutes
