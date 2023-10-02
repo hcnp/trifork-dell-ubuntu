@@ -11,7 +11,9 @@ How to install Ubuntu Linux on a Trifork Dell Computer.
   - Create a recoverey key (and file)
     - To save it on the current usb disk, open a terminal with ctrl+alt+t, open Disks with `gnome-disks &`, create a FAT partition on the empty space and mount it
     - Open the file manager and copy it to the mounted disk: `nautilus &`
-  - When the installation has finished a dialog wants you to restart the system. You can do that now
+- When the installation has finished a dialog wants you to restart the system. You can do that now
+- Submit the recovery key to Trifork IT: https://docs.trifork.com/display/TITSERV/Trifork+IT+Forms
+  
 
 # Package managers
 Ubuntu has [Apt](https://wiki.debian.org/Apt) and [Snap](https://snapcraft.io/) baked in. In order to install all the tools needed, we almost certaintly need extras.
