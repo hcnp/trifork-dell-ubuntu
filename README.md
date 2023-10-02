@@ -117,7 +117,7 @@ This is the open source version of Docker and enables you to run the deamon, bui
 ```
 
 #### [Rancher Desktop](https://rancherdesktop.io/)
-Besides enabling you to run docker commands, you will also be able to run a Kubernetes cluster. In fact all containers you run will be in a local Kubernetes cluster. This is great if you want to test containers that are going to run in a cluster hosted at [Netic](https://netic.dk) as they are using [RKE2](https://docs.rke2.io/) which is a server distribution of Kubernetes SUSE and is veriy similar to Rancher Desktop. You can even choose the version of k8s to and run containerd as in RKE2 instead of dockerd
+Besides enabling you to run docker commands, you will also be able to run a Kubernetes cluster. In fact all containers you run will be in a local Kubernetes cluster. This is great if you want to test containers that are going to run in a cluster hosted at [Netic](https://netic.dk) as they are using [RKE2](https://docs.rke2.io/) which is a server distribution of Kubernetes SUSE and is veriy similar to Rancher Desktop. You can even choose the version of k8s and run containerd as in RKE2 instead of dockerd
 ```
 ./apps/rancher-desktop.sh
 ```
