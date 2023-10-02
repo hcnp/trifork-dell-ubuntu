@@ -139,3 +139,14 @@ See also: https://docs.trifork.com/display/TRIAAL/Rancher+Desktop+as+Docker-Desk
 # Tips
 ## Management of dot files
 On Linux and other Unix-like systems much configuration are stored in [dotfiles](https://en.wikipedia.org/wiki/Dot_file). You can manage these to easily migrate to a new computer or to share configuration on multiple computers with Git and GNU Stow. See this article: [Managing Dotfiles With Stow](https://apiumhub.com/tech-blog-barcelona/managing-dotfiles-with-stow/)
+
+## Gnome Extentions
+Different extenstions to the desktop UI or functionality.
+
+### Install
+https://wiki.gnome.org/action/show/Projects/GnomeShellIntegration/Installation#Ubuntu_Linux
+
+### My recommendations
+- [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
+- [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
+- [Internet Radio](https://extensions.gnome.org/extension/836/internet-radio/)
