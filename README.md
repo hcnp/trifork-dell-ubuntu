@@ -98,3 +98,37 @@ Install in Google Chrome by clicking the icon in the address bar when logged in 
 ## GitG
 GUI for Git from Gnome which is perfect for Ubuntu as it runs Gnome.
 `sudo apt install gitg`
+
+## GitHub CLI
+It can be handy if you often create PRs on GitHub or other tasks to do full or semiautomated task with the GitHub CLI.
+`sudo apt install gh`
+
+## Gitlab CLI
+`brew install glab`
+
+## Docker
+### Without a license
+There are multiple choices for running containers without a license for Docker Desktop - even where you still can use the classic docker commands such as `docker build` and `docker run`:
+
+#### [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)
+This is the open source version of Docker and enables you to run the deamon, build containers etc.
+`apps/docker-engine.sh`
+
+#### [Rancher Desktop](https://rancherdesktop.io/)
+Besides enabling you to run docker commands, you will also be able to run a Kubernetes cluster. In fact all containers you run will be in a local Kubernetes cluster. This is great if you want to test containers that are going to run in a cluster hosted at [Netic](https://netic.dk) as they are using [RKE2](https://docs.rke2.io/) which is a server distribution of Kubernetes SUSE and is veriy similar to Rancher Desktop. You can even choose the version of k8s to and run containerd as in RKE2 instead of dockerd
+
+See also: https://docs.trifork.com/display/TRIAAL/Rancher+Desktop+as+Docker-Desktop+alternative
+
+#### [podman](https://podman.io/get-started) - Deamonless container engine
+
+### Docker Desktop - Requires a license
+- See [Install Docker Desktop on Linux](https://docs.docker.com/desktop/install/linux-install/)
+- License at Trifork:
+  - Create account at https://hub.docker.com. Preferrably <initials>trifork
+  - Send an email to apk@trifork.com with your account name and BU name
+  - Tell your IT first liner to add you to the Trifork organization
+  - Check that Docker Desktop reports a "Team Tier" license
+
+# Tips
+## Management of dot files
+On Linux and other Unix-like systems much configuration are stored in [dotfiles](https://en.wikipedia.org/wiki/Dot_file). You can manage these to easily migrate to a new computer or to share configuration on multiple computers with Git and GNU Stow. See this article: [Managing Dotfiles With Stow](https://apiumhub.com/tech-blog-barcelona/managing-dotfiles-with-stow/)
