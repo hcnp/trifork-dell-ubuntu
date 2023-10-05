@@ -1,6 +1,18 @@
 # Ubuntu on Trifork Dell Machines
 How to install Ubuntu Linux on a Trifork Dell Computer.
 
+You should probably clone this repo in order to easier run scripts etc.:
+```
+sudo apt install --yes git
+git clone git@github.com:hcnp/trifork-dell-ubuntu.git
+cd trifork-dell-ubuntu
+```
+
+> ⚠️ **DISCLAIMER**:
+> 
+> I will only document the cli (command-line interface) way of installing and configuring, as this is easier to document and repeat, and leave it up to the reader to use the GUI (Graphical User Interface) to do the same.
+> I prefer Apt and Snap over Flatpak and Homebrew as they are baked into Ubuntu. Maybe you can change my opinion if you don't agree.
+
 # Download Dell Recovery Image for USB Drive
 - Download the image for your system (ISO): [Dell OS Recovery image](https://www.dell.com/support/home/en-us/drivers/osiso/recoverytool)
 - And create a bootable USB media as described on [How to Download and Use the Dell Operating System Recovery Image in Ubuntu or Linux](https://www.dell.com/support/kbdoc/en-us/000132294/how-to-use-the-dell-hosted-recovery-image-of-linux) under "Creating a USB recovery media"
@@ -44,18 +56,6 @@ Some development tools are only available with this manager. Examples are k9s an
 
 # Trifork setup checklist
 [4: Den første dag - tjekliste til opsætning for nye medarbejdere](https://docs.trifork.com/pages/viewpage.action?pageId=92572195)
-
-You should probably clone this repo in order to easier run scripts etc.:
-```
-sudo apt install --yes git
-git clone git@github.com:hcnp/trifork-dell-ubuntu.git
-cd trifork-dell-ubuntu
-```
-
-> ⚠️ **DISCLAIMER**:
-> 
-> I will only document the cli (command-line interface) way of installing and configuring, as this is easier to document and repeat, and leave it up to the reader to use the GUI (Graphical User Interface) to do the same.
-> I prefer Apt and Snap over Flatpak and Homebrew as they are baked into Ubuntu. Maybe you can change my opinion if you don't agree.
 
 ## E-mail
 - The best e-mail client with Exchange e-mail and calendar support for Gnome in Ubuntu is [Evolution](https://wiki.gnome.org/Apps/Evolution)
