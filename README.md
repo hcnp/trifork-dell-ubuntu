@@ -140,13 +140,31 @@ See also: https://docs.trifork.com/display/TRIAAL/Rancher+Desktop+as+Docker-Desk
 ## Management of dot files
 On Linux and other Unix-like systems much configuration are stored in [dotfiles](https://en.wikipedia.org/wiki/Dot_file). You can manage these to easily migrate to a new computer or to share configuration on multiple computers with Git and GNU Stow. See this article: [Managing Dotfiles With Stow](https://apiumhub.com/tech-blog-barcelona/managing-dotfiles-with-stow/)
 
-## Gnome Extentions
-Different extenstions to the desktop UI or functionality.
+## GNOME & GNOME Extensions
+[GNOME](https://gnome.org) is the [desktop environment (DE)](https://en.wikipedia.org/wiki/Desktop_environment) that comes with Ubuntu.
 
-### Install
+### GNOME Apps
+Besides the apps that comes with GNOME on Ubunut the [GNOME Project](https://en.wikipedia.org/wiki/GNOME_Project) has a whole bunch of apps for GNOME. See [Apps for GNOME](https://apps.gnome.org/)
+
+The ones that doesn't come with Ubuntu can be installed with Flatpak for the latest version, as the GNOME Project currently uses that for all the latest versions.
+
+#### Recommended extra apps
+- [Drawing](https://apps.gnome.org/Drawing/) - Resembles MS Paint a bit - A simple image editor
+- [GIMP](https://gimp.org) - Strictly not a GNOME App - An advanced image editor in the category of Adobe Photoshop
+
+### GNOME Extensions
+Different extentions to the desktop UI or functionality.
+
+### Install Integration
 https://wiki.gnome.org/action/show/Projects/GnomeShellIntegration/Installation#Ubuntu_Linux
+
+### Install GNOME Extensions app
+```
+flatpak install flathub org.gnome.Extensions
+```
 
 ### My recommendations
 - [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
 - [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
 - [Internet Radio](https://extensions.gnome.org/extension/836/internet-radio/)
+- [Bing Wallpaper](https://extensions.gnome.org/extension/1262/bing-wallpaper-changer/)
