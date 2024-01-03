@@ -47,12 +47,12 @@ Primarily to be able to install the latest version of Evolution for e-mail. See 
 - Now you can install packages with the `flatpak` command or `gnome-software`
 
 ## Homebrew
-Some development tools are only available with this manager. Examples are k9s and other container tools, cosign, glab for GitLab, etc.
+Some development tools, libraries etc. are only available with this manager.
 
 ### Install
 - [Homebrew on Linux](https://docs.brew.sh/Homebrew-on-Linux)
 - Run: `./package-managers/brew.sh`
-- You can now install software like kubernetes-cli with `brew install kubernetes-cli`
+- You can now install software like kubernetes-cli with `brew install aws-iam-authenticator`
 
 # Trifork setup checklist
 [4: Den første dag - tjekliste til opsætning for nye medarbejdere](https://docs.trifork.com/pages/viewpage.action?pageId=92572195)
@@ -106,7 +106,7 @@ It can be handy if you often create PRs on GitHub or other tasks to do full or s
 `sudo apt install gh`
 
 ## Gitlab CLI
-`brew install glab`
+`sudo snap install glab`
 
 ## Docker
 ### Without a license
