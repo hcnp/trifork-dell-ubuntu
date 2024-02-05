@@ -43,7 +43,7 @@ Primarily to be able to install the latest version of Evolution for e-mail. See 
 - [Ubuntu Quick Setup](https://flatpak.org/setup/Ubuntu)
   - Check the documentation if the script is out of date
 - Run: `./package-managers/ubuntu-flatpak.sh`
-- You can logout now and back in again for Flatpak to work now if you want: `gnome-session-quit`
+- You can logout and back in again for Flatpak to work immediately if you want: `gnome-session-quit`
 - Now you can install packages with the `flatpak` command or `gnome-software`
 
 ## Homebrew
@@ -52,7 +52,7 @@ Some development tools, libraries etc. are only available with this manager.
 ### Install
 - [Homebrew on Linux](https://docs.brew.sh/Homebrew-on-Linux)
 - Run: `./package-managers/brew.sh`
-- You can now install software like kubernetes-cli with `brew install aws-iam-authenticator`
+- You can now install software like aws-iam-authenticator with `brew install aws-iam-authenticator`
 
 # Trifork setup checklist
 [4: Den første dag - tjekliste til opsætning for nye medarbejdere](https://docs.trifork.com/pages/viewpage.action?pageId=92572195)
@@ -77,15 +77,21 @@ Some development tools, libraries etc. are only available with this manager.
 - [How to use Trifork Chat](https://docs.trifork.com/display/TITSERV/How+to+use+Trifork+Chat)
 
 ### Slack
-`snap install slack`
+```
+snap install slack
+```
 
 ## Antivirus
 [How to install ESET Endpoint Security](https://docs.trifork.com/display/TITSERV/How+to+install+ESET+Endpoint+Security)
-`./apps/eset.sh`
+```
+./apps/eset.sh
+```
 
 ## Video meetings
 ### Zoom
-`flatpak install --assumeyes us.zoom.Zoom`
+```
+flatpak install --assumeyes us.zoom.Zoom
+```
 
 ### Teams
 Install in Google Chrome by clicking the icon in the address bar when logged in via https://teams.microsoft.com/
@@ -95,18 +101,27 @@ Install in Google Chrome by clicking the icon in the address bar when logged in 
 - `sudo bash ~/Downloads/cisco-secure-client-linux64-*.sh`
 
 ## Visual Studio Code
-`snap install code`
+```
+snap install code
+```
 
 ## GitG
 [GUI for Git from Gnome](https://wiki.gnome.org/Apps/Gitg/), which is perfect for Ubuntu, as it runs Gnome.
-`sudo apt install gitg`
+```
+sudo apt install gitg
+```
 
 ## GitHub CLI
 It can be handy if you often create PRs on GitHub or other tasks to do full or semiautomated tasks with the GitHub CLI.
-`sudo apt install gh`
+```
+sudo apt install gh
+```
 
 ## Gitlab CLI
-`sudo snap install glab`
+The same as GitHub CLI, but for Git**Lab**
+```
+sudo snap install glab
+```
 
 ## Docker
 ### Without a license
@@ -144,9 +159,9 @@ On Linux and other Unix-like systems much configuration are stored in [dotfiles]
 [GNOME](https://gnome.org) is the [desktop environment (DE)](https://en.wikipedia.org/wiki/Desktop_environment) that comes with Ubuntu.
 
 ### GNOME Apps
-Besides the apps that comes with GNOME on Ubunut the [GNOME Project](https://en.wikipedia.org/wiki/GNOME_Project) has a whole bunch of apps for GNOME. See [Apps for GNOME](https://apps.gnome.org/)
+Besides the apps that comes with GNOME on Ubuntu the [GNOME Project](https://en.wikipedia.org/wiki/GNOME_Project) has a whole bunch of apps for GNOME. See [Apps for GNOME](https://apps.gnome.org/)
 
-The ones that doesn't come with Ubuntu can be installed with Flatpak for the latest version, as the GNOME Project currently uses that for all the latest versions.
+The ones that don't come with Ubuntu can be installed with Flatpak for the latest version, as the GNOME Project currently uses that for all the latest versions.
 
 #### Recommended extra apps
 - [Drawing](https://apps.gnome.org/Drawing/) - Resembles MS Paint a bit - A simple image editor
@@ -167,4 +182,4 @@ flatpak install flathub org.gnome.Extensions
 - [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
 - [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
 - [Internet Radio](https://extensions.gnome.org/extension/836/internet-radio/)
-- [Bing Wallpaper](https://extensions.gnome.org/extension/1262/bing-wallpaper-changer/)
+- [Random Wallpaper](https://extensions.gnome.org/extension/1040/random-wallpaper/)
