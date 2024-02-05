@@ -1,6 +1,8 @@
 # Ubuntu on Trifork Dell Machines
 How to install Ubuntu Linux on a Trifork Dell Computer.
 
+I would love to get a pull request with improvements and/or you can create issues if you have anything at all to say. :)
+
 You should probably clone this repo in order to easier run scripts etc.:
 ```
 sudo apt install --yes git
