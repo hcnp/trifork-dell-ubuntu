@@ -172,15 +172,15 @@ The ones that don't come with Ubuntu can be installed with Flatpak for the lates
 ### GNOME Extensions
 Different extentions to the desktop UI or functionality.
 
-### Install Integration
+#### Install Integration
 https://wiki.gnome.org/action/show/Projects/GnomeShellIntegration/Installation#Ubuntu_Linux
 
-### Install GNOME Extensions app
+#### Install GNOME Extensions app
 ```
 flatpak install flathub org.gnome.Extensions
 ```
 
-### My recommendations
+#### My recommendations
 - [Notifications Alert](https://extensions.gnome.org/extension/258/notifications-alert-on-user-menu/)
 - [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
 - [Internet Radio](https://extensions.gnome.org/extension/836/internet-radio/)
