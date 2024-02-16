@@ -63,7 +63,7 @@ Some development tools, libraries etc. are only available with this manager.
 - The best e-mail client with Exchange e-mail and calendar support for Gnome in Ubuntu is [Evolution](https://wiki.gnome.org/Apps/Evolution)
 - Install with Flatpak: `flatpak install --assumeyes org.gnome.Evolution`
 - When configuring Evolution in "Receiving Email" choose "Exchange Web Services" as "Server Type" &lt;username&gt;@trifork.com in "Username" and use the "Fetch URL" button
-- Only NTLM works for me. Kerberos would be perferrable though
+- Only NTLM works for me. Oauth2 would be perferrable though
 - My recommendation for further options:
   - Check every 5 minutes
   - Check all folders
@@ -72,6 +72,24 @@ Some development tools, libraries etc. are only available with this manager.
   - Do not sync older than 1 years (use https://webmail.trifork.com for older)
   - Default for everything else
 - Configuring "Microsoft Exchange" under "Online Accounts" in Gnome/System settings creates the settings in Evolution, but does not work for me. What works is configuring it directly in Evolution
+
+### Open shared calendar (or conference room)
+- Right click on your account name in mail view and select "Subscribe to folder of other user..."
+- Find the user or enter the e-mail address of the user
+- Select "Calendar"
+
+### Open shared mailbox
+This is the same as for a shared calendar - you just choose "Inbox" instead of "Calendar". The inbox will appear under "Foreign Folders".
+
+### Other clients
+There are also these clients that people like, but I haven't found them to work with the Exchange calendars unless you pay for an extension add-on:
+
+- [Thunderbird](https://www.thunderbird.net/)
+  - Thunderbird automatically installs the paid extension [Owl](https://www.beonex.com/owl/) when configuring on the first start
+  - Install: `sudo apt install thunderbird thunderbird-gnome-support`
+- [Blue Mail](https://bluemail.me/)
+  - This actually works out of the box, but I haven't figured out how to view others or shared calendars
+- [KMail](https://apps.kde.org/da/kmail2/) - This also looks to work, but I haven't tried it - Also you should probably run [Kubuntu](https://kubuntu.org/) if you want to use this instead of Evolution
 
 ## Chat
 ### Rocket Chat
@@ -88,6 +106,19 @@ snap install slack
 ```
 ./apps/eset.sh
 ```
+
+#### Uninstall/Reinstall
+We have experienced that the agent soemtimes stops updating. Maybe because of too old versions.
+
+Sometimes the solution is to reinstall:
+
+Uninstall with:
+```
+wget https://download.eset.com/com/eset/apps/business/era/agent/latest/agent-linux-x86_64.sh --output-document /tmp/agent-linux-x86_64.sh
+chmod +x /tmp/agent-linux-x86_64.sh
+sudo /tmp/agent_linux_x86_64.sh --uninstall
+```
+... and then install as before.
 
 ## Video meetings
 ### Zoom
@@ -153,6 +184,15 @@ See also: https://docs.trifork.com/display/TRIAAL/Rancher+Desktop+as+Docker-Desk
   - Tell your IT first liner to add you to the Trifork organization
   - Check that Docker Desktop reports a "Team Tier" license
 
+## [Nala](https://gitlab.com/volian/nala)
+A better CLI frontend for Apt
+
+Install: `sudo apt install nala`
+
+With `sudo nala fetch` you can get help to configure Apt with the fastest mirrors where you are to speed up downloads packages when updating or installing.
+
+You can also do `nala history` as Nala will log your installs.
+
 # Tips
 ## Management of dot files
 On Linux and other Unix-like systems much configuration are stored in [dotfiles](https://en.wikipedia.org/wiki/Dot_file). You can manage these to easily migrate to a new computer or to share configuration on multiple computers with Git and GNU Stow. See this article: [Managing Dotfiles With Stow](https://apiumhub.com/tech-blog-barcelona/managing-dotfiles-with-stow/)
@@ -185,3 +225,7 @@ flatpak install flathub org.gnome.Extensions
 - [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
 - [Internet Radio](https://extensions.gnome.org/extension/836/internet-radio/)
 - [Random Wallpaper](https://extensions.gnome.org/extension/1040/random-wallpaper/)
+
+# Troubleshooting
+## Firmware updates
+This should **just work**(TM) automatically with the built in gnome-software, but if not, you can trigger it manually with `fwupdmgr`. See this short intro: [How to Update Firmware on Ubuntu using fwupd](https://linuxopsys.com/topics/update-firmware-on-ubuntu-using-fwupd)
